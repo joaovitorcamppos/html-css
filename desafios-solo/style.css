@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Piece';
+    src: url('fonts/one-piece.ttf') format('truetype');
+}
+
+:root{
+    --cor0:#FAEC51;
+    --cor1:#E6B01C;
+    --cor2:#FA992A;
+    --cor3:#E64910;
+    --cor4:#FF0505;
+    --cor5:white;
+
+    --font-destaque: Piece,Arial;
+    --font-titulo: 'Bebas Neue', Arial;
+
+}
+
+body.home-page{
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+    
+}
+
+header h1{
+    color: var(--cor0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+    font-weight: normal;
+    font-size: 3.5em;
+    font-family: var(--font-destaque);
+}
+
+header p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+    color: var(--cor0);
+    width: 250px;
+    margin: auto;
+    margin-top: 8px;
+    
+}
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.281);
+}
+
+nav a {
+    color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor4);
+    
+}
+main{
+    background-color: white;
+    
+    max-width: 950px;
+   
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.336) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;;
+   
+}
+
+.titulo{
+    font-family: var(--font-titulo);
+    font-size: 1.5;
+    margin-top: 5px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+main p{
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 1.05em;
+    line-height: 1.5em;
+}
+
+picture > img{
+    
+    display: inline;
+    
+    margin: 0px 300px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ #bio {
+    text-align: center;
+   
+}
+
+span{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+aside > h3{
+    padding-bottom: 10px;
+}
+
+aside > div.box{
+    width: 100%;
+    max-width:150px;
+    display: inline;
+    margin: 5px 0px;
+    padding: 10px 0px;
+   
+}
+div.video {
+    background-color: var(--cor0);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+   
+    position: relative;
+
+}
+
+.video > iframe{
+
+   
+   
+   }
+
+
+footer{
+    background-color: var(--cor4);
+    padding: 10px;
+    height: 50px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.829);
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

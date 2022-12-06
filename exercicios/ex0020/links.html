@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+
+        #   =  id
+        .   =  class
+        :   =  pseudo-class
+        ::  =  pseudo-element
+        >   =  children
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        a::after{
+            content: ' [link]';
+            color: rgba(17, 17, 17, 0.76);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .especial{
+            background-color: rgba(224, 113, 113, 0.534);
+        }
+        
+        .especial::before{
+            content:' ⇒';
+            color: rgb(255, 0, 0);
+        }
+        .especial::after{
+            content:' ⇐';
+            color: rgb(255, 0, 0);
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li> 
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site CursoemVideo</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nihil veritatis aut quibusdam reprehenderit minus error porro commodi officiis voluptatum laboriosam earum, ipsa minima. Quae autem sequi quos ipsa laudantium? <a href="https://www.cursoemvideo.com" class="especial">Site CursoemVideo</a> aaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+</body>
+</html>
