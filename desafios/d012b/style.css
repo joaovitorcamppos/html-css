@@ -43,5 +43,39 @@ header p > a:hover{
     text-decoration: underline;
 }
 
+#verso1{
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    height: 300px;
+}
+
+
+
+#verso1 > p {
+    font-size: 1.8em;
+    
+    padding: 5px;
+   
+}
+
+#verso2{
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: cover;
+    border: 1px solid black;
+    margin: 10px;
+    height: 250px;
+}
+
+#verso2 > p {
+    display: inline-block;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.151);
+    color: white;
+    font-size: 1.8em;
+    padding: 5px;
+   
+}
 
 
